@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mihika Nangare | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(246, 246, 248, 0.8);
+        }
+        .dark .glass-nav {
+            background-color: rgba(16, 19, 34, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d101b] dark:text-[#f8f9fc] transition-colors duration-300">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary text-white rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">terminal</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Mihika Nangare</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#home">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-all">
+                    Download CV
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-20 @container" id="home">
+<div class="flex flex-col gap-10 @[864px]:flex-row @[864px]:items-center">
+<div class="flex-1 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                        Available for Internships
+                    </div>
+<h1 class="text-5xl @[480px]:text-6xl font-black leading-[1.1] tracking-tight text-[#0d101b] dark:text-white">
+                        Mihika <span class="text-primary">Nangare</span>
+</h1>
+<p class="text-lg text-[#4c599a] dark:text-[#9ea7d0] font-medium leading-relaxed max-w-[600px]">
+                        Third Year Computer Science Student at MIT-WPU. Passionate Cloud, AI/ML &amp; IoT Enthusiast building innovative digital solutions for real-world problems.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="flex min-w-[140px] items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:shadow-lg hover:shadow-primary/30 transition-all" href="#projects">
+                            View Projects
+                        </a>
+<a class="flex min-w-[140px] items-center justify-center rounded-lg h-12 px-6 bg-[#e7e9f3] dark:bg-[#2a2d3d] text-[#0d101b] dark:text-white text-base font-bold tracking-wide hover:bg-[#d1d5e8] dark:hover:bg-[#3b3f55] transition-all" href="#contact">
+                            Contact Me
+                        </a>
+</div>
+</div>
+<div class="flex-1">
+<div class="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 p-4 border border-primary/10">
+<div class="w-full h-full rounded-2xl bg-center bg-cover" data-alt="Professional portrait of a computer science student in a modern tech environment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHmDuanD4ASrKQ07N9mJ-5E0nKlqvZzXom0mW6cxMAgSgP5etLvgMEW0cTi85WCh3-JXsM-Q_gj0Xs4EycaljWkn0pELTPG2Pc9kisiAl1SCrLdSktCRcFZ4dxOHUDt6InsWpdI29Yq4JVolMe-qvyJjS0W8_72z1pUA8SLipXDSOw1-XG-Tp36QaNB7wzpLLEiPoieTLhQLNm2ec5xYC0Gh2VqdZVpSxWUN4zGXSVuUffOgeCuzIj9C0HNRz5rTIV3wGWoYR7yGg");'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-white dark:bg-[#15192d] py-20" id="about">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-16 items-start">
+<div class="w-full md:w-1/3">
+<div class="sticky top-24 space-y-6">
+<h2 class="text-3xl font-bold tracking-tight">About Me</h2>
+<div class="p-1 rounded-2xl bg-slate-100 dark:bg-[#1e233a] overflow-hidden">
+<img class="rounded-xl w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="A clean collaborative workspace showing technology and student life" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHnuOfkHxzX4sy6I08veurhLs7jqr79jqwaUHuaJhyEn6yahN-rWNmrHTqI_FiLpPW7lv76surpzJZD0nrT5wjfUQWneS7Ptj6M5Y5UtLYgJFzQPeP93Z1rksJqmhBWLdiimhtPJEQlsm2J7J2jYCiPMInDeMWNKMJGRBVvwZBL12t74W6fQq4WiX_wQY9UdT84KLP4lHXlB9De7OeHRsKUP0DQX3BkvdQLZTm-GeMoFBwsbEc8FtyEumO2qaOdhThrRmDSBrasc"/>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3 space-y-8">
+<p class="text-xl leading-relaxed text-[#4c599a] dark:text-[#9ea7d0]">
+                            I am a dedicated Computer Science student with a strong academic foundation and a hands-on approach to learning. My journey in technology is driven by a curiosity to understand how Cloud Infrastructure, Artificial Intelligence, and the Internet of Things converge to create smarter systems.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d] flex flex-col gap-2">
+<span class="text-primary material-symbols-outlined">school</span>
+<p class="text-sm font-medium text-[#4c599a] dark:text-[#9ea7d0] uppercase tracking-wider">University</p>
+<p class="text-lg font-bold">MIT-WPU, Pune</p>
+</div>
+<div class="p-6 rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d] flex flex-col gap-2">
+<span class="text-primary material-symbols-outlined">grade</span>
+<p class="text-sm font-medium text-[#4c599a] dark:text-[#9ea7d0] uppercase tracking-wider">Academic Standing</p>
+<p class="text-lg font-bold">8.13 CGPA</p>
+</div>
+<div class="p-6 rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d] flex flex-col gap-2">
+<span class="text-primary material-symbols-outlined">code</span>
+<p class="text-sm font-medium text-[#4c599a] dark:text-[#9ea7d0] uppercase tracking-wider">Major</p>
+<p class="text-lg font-bold">Computer Science &amp; Engineering</p>
+</div>
+<div class="p-6 rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d] flex flex-col gap-2">
+<span class="text-primary material-symbols-outlined">psychology</span>
+<p class="text-sm font-medium text-[#4c599a] dark:text-[#9ea7d0] uppercase tracking-wider">Focus Areas</p>
+<p class="text-lg font-bold">Cloud, AI/ML &amp; IoT</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-20 max-w-[1200px] mx-auto px-6" id="skills">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Technical Expertise</h2>
+<div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Programming -->
+<div class="bg-white dark:bg-[#15192d] p-8 rounded-2xl border border-[#e7e9f3] dark:border-[#2a2d3d] shadow-sm hover:shadow-md transition-all">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">data_object</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Programming &amp; Tools</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> C / C++ &amp; Python
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> MySQL &amp; Database Mgmt
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> AutoCAD &amp; System Design
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Git &amp; Version Control
+                        </li>
+</ul>
+</div>
+<!-- Cloud & DevOps -->
+<div class="bg-white dark:bg-[#15192d] p-8 rounded-2xl border border-[#e7e9f3] dark:border-[#2a2d3d] shadow-sm hover:shadow-md transition-all">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">cloud</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Cloud &amp; DevOps</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Amazon Web Services (AWS)
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Docker &amp; Containerization
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Kubernetes Orchestration
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Linux Administration
+                        </li>
+</ul>
+</div>
+<!-- AI/ML -->
+<div class="bg-white dark:bg-[#15192d] p-8 rounded-2xl border border-[#e7e9f3] dark:border-[#2a2d3d] shadow-sm hover:shadow-md transition-all">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h3 class="text-xl font-bold mb-4">AI / Machine Learning</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Random Forest &amp; SVM
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> ML Pipeline Development
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Data Preprocessing (Pandas)
+                        </li>
+<li class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="size-1.5 rounded-full bg-primary"></span> Scikit-Learn Ecosystem
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-20 bg-white dark:bg-[#15192d]" id="projects">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-end justify-between mb-16">
+<div>
+<h2 class="text-3xl font-bold tracking-tight mb-4">Selected Projects</h2>
+<p class="text-[#4c599a] dark:text-[#9ea7d0]">Showcasing my technical implementations and problem-solving skills.</p>
+</div>
+<div class="hidden md:block h-[1px] flex-grow mx-10 bg-[#e7e9f3] dark:bg-[#2a2d3d]"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Project 1 -->
+<div class="group flex flex-col gap-4">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Abstract visualization of disaster management and help coordination system" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcKNhCI3lXQYa9ZsOC3rFrF--_yxVMMr6vLZeRdb5avwj_TIDE8YhtFs8dic4Y4EJDWS3Q7cIY-PLMPkmm8fiae2Tgs7-E8T0FCWM6ZwMjSxDvcEi2Knbh8ThdSrZOecPtbBVoyUu3SPVxTgzqH9YmRWBUdf6f2b6OA2L6Tk8feIy2sd8tDF1YXNCxRfsGtG9wx9pFM3dPhkyPbHhiGS-sui8CvaA76lJDZnkMgS3J0kymto3Uab_i4Ov5Y2FSbK-v_vqb-oW3sEo");'></div>
+</div>
+<div class="space-y-3">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">React</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Firebase</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Maps API</span>
+</div>
+<h3 class="text-2xl font-bold">Sahaay: Disaster Relief</h3>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] leading-relaxed">
+                                A comprehensive disaster management platform designed to connect victims with rescuers in real-time using geolocation services.
+                            </p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col gap-4">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="IoT sensors integrated into a road infrastructure concept" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFwx36lPKfj2gh7XzA5Xsf75hsIcIJPz-atI0OM4trZ202kF4h_NUCJlruWSBSvCzTz1CmNWibdujUsjdKF7xJfIwdd9072iUWzvS6EMOtTVS3IcczXEQRjoatI1m6A0lQtDFIm4GPoX0MGLsyLWWDXVgrTiNp44gyxLfwzWcnq5rks9YFuMNEdX3yraQtIKVQCrTJrI7T9wBlIU83tbC-SZmx1CiM51h4EhycTMGBrgh43PZ0bH7r9q6inSnedOGsb3hbyeRI_ck");'></div>
+</div>
+<div class="space-y-3">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Arduino</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Sensors</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">C++</span>
+</div>
+<h3 class="text-2xl font-bold">IoT Road Monitoring</h3>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] leading-relaxed">
+                                Smart infrastructure project that monitors road conditions and pothole detection using ultrasonic sensors and accelerometer data.
+                            </p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col gap-4">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Digital interface showing email filtering and security analytics" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDayYgohURrHolhemrNElwSEQlEGofvFt8KvnnntSZdfarmn--JznXND-Foe0-_KAllBEYnzv2F478E62bs4kECgy5LHMadSjPkYB3GkJHMa-38_2zMFCAN1qnxM_JeRU8JJWBZXHIirhzlSAKbriRARa8T1SyQNmjs45ZFDcEMYBL06nJ0BuNY0lEd4yHosNX0O9fyVDi4VarpEcbCBX_SWZOGgzeYo3o0pCyYLbldRCl6Al7H20HBPAo7dE8roX7SoJaK0MTVYvE");'></div>
+</div>
+<div class="space-y-3">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Python</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">NLP</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Scikit-Learn</span>
+</div>
+<h3 class="text-2xl font-bold">Spam Classifier</h3>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] leading-relaxed">
+                                Machine learning model built to identify spam messages with 98% accuracy using Natural Language Processing and Naive Bayes algorithm.
+                            </p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group flex flex-col gap-4">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="City traffic lights at night symbolizing smart city control systems" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjqSfq1V120uvlIQ1jKla1PVhLNty37fX_ckrjrbGAC67kSSJzRjUHndszYacqfzCwfVE8UFZ09FMhQ4u5cVUSKlxbsOIs4GiMdFq6m97vubKla819-oJHbfUnhQRJgOBKrB33ZJd-8EdvXqM0C4XtcRnmjwGF5OKSqG1UD3aLN0vdc9NVKxIdKTi9rQ6KcYkh7Mku4x18yqeOw1khsSYcVLBVzz3ENg1WJvEEt008RuTvVNxsmrOFpOrE-s3y0etV_GuHK2STcBU");'></div>
+</div>
+<div class="space-y-3">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Embedded C</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">Microcontrollers</span>
+</div>
+<h3 class="text-2xl font-bold">Traffic Light System</h3>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] leading-relaxed">
+                                Automated traffic control logic implemented on microcontrollers to optimize vehicle flow based on time-density parameters.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements & Certs -->
+<section class="py-20 max-w-[1200px] mx-auto px-6">
+<h2 class="text-3xl font-bold tracking-tight mb-12">Certifications &amp; Achievements</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-[#15192d] rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="size-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 shrink-0">
+<span class="material-symbols-outlined">emoji_events</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">ICDCIT 2025 Finalist</h4>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] text-sm mt-1">Recognized for outstanding technical contribution at the International Conference on Distributed Computing and Intelligent Technology.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-[#15192d] rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">AWS Cloud Club Lead</h4>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] text-sm mt-1">Student lead responsible for organizing cloud computing workshops and fostering community learning at MIT-WPU.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-[#15192d] rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Udemy: AWS Certified Solutions Architect</h4>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] text-sm mt-1">Comprehensive training in designing and deploying scalable, highly available systems on AWS.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-[#15192d] rounded-xl border border-[#e7e9f3] dark:border-[#2a2d3d]">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Udemy: Python for Data Science</h4>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] text-sm mt-1">Specialized certification in data analysis, visualization, and machine learning foundations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<footer class="bg-white dark:bg-[#15192d] border-t border-[#e7e9f3] dark:border-[#2a2d3d] pt-20 pb-10" id="contact">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+<div class="max-w-md">
+<h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+<p class="text-[#4c599a] dark:text-[#9ea7d0] mb-8 leading-relaxed">
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                        </p>
+<div class="space-y-4">
+<a class="flex items-center gap-3 text-primary font-medium hover:underline" href="mailto:contact@mihika.com">
+<span class="material-symbols-outlined">mail</span>
+                                mihika.nangare@example.com
+                            </a>
+<div class="flex items-center gap-3 text-[#4c599a] dark:text-[#9ea7d0]">
+<span class="material-symbols-outlined">location_on</span>
+                                Pune, Maharashtra, India
+                            </div>
+</div>
+</div>
+<div class="w-full md:w-auto flex flex-col gap-4">
+<p class="font-bold text-sm uppercase tracking-widest text-[#4c599a]">Social Profiles</p>
+<div class="flex gap-4">
+<a class="size-12 rounded-lg bg-[#f8f9fc] dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d] flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="size-12 rounded-lg bg-[#f8f9fc] dark:bg-[#1e233a] border border-[#e7e9f3] dark:border-[#2a2d3d] flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-[#e7e9f3] dark:border-[#2a2d3d] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-[#4c599a] dark:text-[#9ea7d0]">© 2024 Mihika Nangare. All rights reserved.</p>
+<div class="flex items-center gap-2 text-xs font-bold text-[#4c599a] uppercase tracking-tighter">
+                        Built with Tailwind CSS
+                    </div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
